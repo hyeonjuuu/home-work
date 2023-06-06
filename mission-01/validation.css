@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/* .validationTab{
+  text-align: center;
+} */
+
+.validationList{
+  display: block;
+  /* border: 1px solid tan; */
+}
+
+.validationList li {
+  display: block;
+  background: url(./validation_icon\ 2.svg) no-repeat 16px 10px #ccc;
+  list-style-type: none;
+  width: 250px;
+  height: 37px;
+  border-radius: 34px;
+  margin: 12px;
+}
+
+.W3CLink, .CSSLink{
+  display: block;
+  text-decoration: none;
+  padding: 8px 0;
+  border-radius: 34px;
+  color: black;
+  padding: 8px 8px 8px 36px;
+}
