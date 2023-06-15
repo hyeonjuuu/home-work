@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 전체 컨테이너 section */
+.favoriteSite {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 12px;
+  position: relative;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  width: 190px;
+  height: 147px;
+  background: linear-gradient(#CCC, #EEE);
+}
+
+/* title h2 */
+.favoriteSiteTitle {
+  color: #181818;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+/* title h2 > 사이트 */
+.favoriteSiteTitle > span {
+  color: #ED552F;
+}
+
+/* 리스트 ol */
+.favoriteSiteList {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+/* 리스트 아이템 li */
+.favoriteSiteItem {
+  counter-increment: number;
+  font-size: 11px;
+  line-height: 150%;
+  background: url(./rank.png) no-repeat;
+  height: 17px;
+}
+
+/* li아이템의 a태그 */
+.favoriteSiteItem a {
+  text-decoration: none;
+  color: black;
+}
+
+/* li::before 리스트 넘버 */
+.favoriteSiteItem::before {
+  content: counter(number);
+  display: inline-block;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #a3a3a3;
+  text-align: center;
+  line-height: 150%;
+  color: white;
+}
+
+/* li에 랭크 sprite */
+.Rank1 {
+  background-position: top 3.75px right;
+}
+.Rank2 {
+  background-position: bottom 3px right;
+}
+.Rank3 {
+  background-position: center right;
+}
+.Rank4 {
+  background-position: top 3.75px right;
+}
+
+/* 더보기 */
+.viewMore {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  color: black;
+}
